@@ -1,1 +1,1 @@
-Il fuat changer le nom du chemin dans le fixhier LotooFen, dans la constante REP_DEPART
+Il faut changer le nom du chemin dans le fichier LotooFen, dans la constante REP_DEPART
