@@ -9,7 +9,7 @@ import java.util.*;
 
 public class LotooFen extends JFrame implements ActionListener {
     private static final Font POLICE_JTA = new Font("Lucida Sans", Font.PLAIN, 14);
-    private static final String REP_DEPART = "G:\\Mon Drive\\ESIG\\ESIG 2\\APO\\Eléments ER APO 17-01-18\\Lotoo-IJ";
+    private static final String REP_DEPART = ".";
     private JPanel jPanChoixCarton, jPanCarton, jPanCentre, jPanTirage, jPanAfficherExec, jPanTroisBtn, jPanNord;
     private JButton jBtnChoixCarton, jBtnChargerTirage, jBtnAfficher, jBtnExecuterTirage, jBtnStat, jBtnVider, jBtnQuitter;
     private JLabel jLblChoixCarton, jLblTirage;
