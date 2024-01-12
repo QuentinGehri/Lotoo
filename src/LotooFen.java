@@ -104,9 +104,9 @@ public class LotooFen extends JFrame implements ActionListener {
             if (fichier != null) {
                 cartonActif = new Carton(fichier);
                 afficherUnCarton(cartonActif);
+                jLblChoixCarton.setText("Carton: " + fichier.getPath());
+                this.jBtnChargerTirage.setEnabled(true);
             }
-            jLblChoixCarton.setText("Carton: " + fichier.getPath());
-            this.jBtnChargerTirage.setEnabled(true);
         } else if (e.getSource() == jBtnQuitter) {
             System.exit(0);
         } else if (e.getSource() == jBtnChargerTirage) {
@@ -226,8 +226,8 @@ public class LotooFen extends JFrame implements ActionListener {
     }
 
     private void afficherMessage(int nbLigneRemplie) {
+        jTa.removeAll();
         if (nbLigneRemplie > 0) {
-            jTa.removeAll();
             if (nbLigneRemplie == 1){
                 jTa.setText("QUINE !");
             } else if(nbLigneRemplie == 2) {
@@ -235,9 +235,9 @@ public class LotooFen extends JFrame implements ActionListener {
             } else {
                 jTa.setText("CARTON PLEIN !!");
             }
-            repaint();
-            revalidate();
         }
+        repaint();
+        revalidate();
     }
 
     private int verifLesLignes() {
